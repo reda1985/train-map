@@ -1,7 +1,10 @@
-import express from 'express';
-import db from './db/db';
-import bodyParser from 'body-parser';
+// import express from 'express';
+// import db from './db/db';
+// import bodyParser from 'body-parser';
 
+const express = require('express');
+const bodyParser = require('body-parser');
+const db = require('./db/db');
 // Set up the express app
 const app = express();
 
@@ -137,6 +140,6 @@ app.delete('/api/v1/todos/:id', (req, res) => {
 const PORT = 5000;
 
 app.listen(PORT, () => {
-	console.log('server running on port ${PORT}')
+	console.log(`server running on port ${PORT}`)
 });
 
