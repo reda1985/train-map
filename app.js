@@ -85,7 +85,7 @@ app.put('/api/v1/todos/:id', (req, res) => {
 	}
 	
 	if(!req.body.title){
-		return res.status.(400).send({
+		return res.status(400).send({
 			success: 'false',
 			message: 'title is required !!'
 		});
